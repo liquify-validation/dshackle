@@ -1,6 +1,11 @@
 name: Tests
 
 on:
+  workflow_dispatch:
+    branches:
+    - master
+    - release/*
+    - ci/*
   # if pushed directly
   push:
     paths-ignore:
